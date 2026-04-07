@@ -69,7 +69,7 @@ public class TestRecipeBook {
     @Disabled("Intentionally failing test ")
     @DisplayName("Disabled failing test")
     void failingTest() {
-        Book.deleteRecipe(1); // empty slot, will return null
+        Book.deleteRecipe(1);
         assertEquals("NonExisting", Book.deleteRecipe(1));
     }
 
